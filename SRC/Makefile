@@ -57,7 +57,7 @@ SLUSRC = sreadhb.o sreadrb.o smatgen.o \
 	psgstrf_bmod1D_mv2.o psgstrf_bmod2D_mv2.o \
 	ssp_blas2.o ssp_blas3.o
 
-DLUSRC = dreadhb.o dreadrb.o dmatgen.o \
+DLUSRC = dreadhb.o dreadrb.o dreadmt.o dmatgen.o \
 	pdgssv.o pdgssvx.o dgstrs.o dgsrfs.o \
 	dgscon.o dlacon.o dlangs.o dgsequ.o dlaqgs.o dpivotgrowth.o \
 	pdmemory.o pdutil.o dmyblas2.o \

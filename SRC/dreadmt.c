@@ -74,8 +74,8 @@ dreadmt(int *m, int *n, int *nonz, double **nzval, int **rowind, int **colptr)
         }
     }
     if ( *nonz < lasta ) {
-	fprintf(stderr, "nnz inconsistent: *nonz %d, lasta %d\n",*nonz,lasta);
-	EXIT;
+        fprintf(stderr, "nnz inconsistent: *nonz %d, lasta %d\n",*nonz,lasta);
+        exit(-1);
     }
     
     xa[*n] = lasta--;

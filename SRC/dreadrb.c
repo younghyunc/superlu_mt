@@ -187,8 +187,9 @@ dreadrb(int_t *nrow, int_t *ncol, int_t *nonz,
     fp = stdin;
 
     /* Line 1 */
-    fgets(buf, 100, fp);
+    fgets(buf, 80, fp);
     fputs(buf, stdout);
+    dDumpLine(fp);
 
     /* Line 2 */
     for (i=0; i<4; i++) {
